@@ -36,7 +36,7 @@ set(test, 'foo');
 console.log(test.name);
 // "foo"
 
-// spaces are allowed, and even usually illegal UTF8 chars
+// spaces, and even usually illegal UTF8 chars, are allowed
 set(test, '   ☃   ');
 
 console.log(test.name);
