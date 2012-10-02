@@ -1,0 +1,22 @@
+{
+  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
+  "name": "function-name",
+  "description": "Set the \"name\" property of `function` objects",
+  "keywords": [
+    "function",
+    "set",
+    "name"
+  ],
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TooTallNate/node-function-name.git"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "bindings": "*"
+  }
+}
