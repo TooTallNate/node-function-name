@@ -44,7 +44,7 @@ console.log(test.name);
 // "   ☃   "
 
 // the newly set "name" also appears in stack traces!
-test()
+test();
 // Error: blah
 //     at    ☃    (/Users/nrajlich/node-function-name/t.js:4:9)
 //     at Object.<anonymous> (/Users/nrajlich/node-function-name/t.js:23:1)
