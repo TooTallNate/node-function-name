@@ -17,6 +17,7 @@
     "node": "*"
   },
   "dependencies": {
-    "bindings": "*"
+    "bindings": "*",
+    "nan": "~0.8.0"
   }
 }

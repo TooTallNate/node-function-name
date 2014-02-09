@@ -1,21 +1,24 @@
 #include "v8.h"
 #include "node.h"
+#include "nan.h"
 
 using namespace v8;
 using namespace node;
 
 namespace {
 
-Handle<Value> Set(const Arguments& args) {
-  HandleScope scope;
+NAN_METHOD(Set) {
+  NanScope();
+
   Local<Function> fn = Local<Function>::Cast(args[0]);
   Local<String> name = args[1]->ToString();
   fn->SetName(name);
-  return Undefined();
+
+  NanReturnUndefined();
 }
 
 void Initialize(Handle<Object> target) {
-  HandleScope scope;
+  NanScope();
   NODE_SET_METHOD(target, "set", Set);
 }
 
