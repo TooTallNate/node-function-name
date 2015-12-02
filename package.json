@@ -8,6 +8,7 @@
     "name"
   ],
   "version": "0.0.3",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/TooTallNate/node-function-name.git"
