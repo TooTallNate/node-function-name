@@ -1,4 +1,11 @@
 
+1.0.0 / 2015-12-01
+==================
+
+  * update to nan v2
+  * package: add MIT "license" field
+  * package: remove "engines" field
+
 0.0.3 / 2014-05-11
 ==================
 
