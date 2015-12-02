@@ -8,18 +8,18 @@ using namespace node;
 namespace {
 
 NAN_METHOD(Set) {
-  NanScope();
+  Nan::HandleScope();
 
-  Local<Function> fn = Local<Function>::Cast(args[0]);
-  Local<String> name = args[1]->ToString();
+  Local<Function> fn = Local<Function>::Cast(info[0]);
+  Local<String> name = info[1]->ToString();
   fn->SetName(name);
 
-  NanReturnUndefined();
+  info.GetReturnValue().SetUndefined();
 }
 
 void Initialize(Handle<Object> target) {
-  NanScope();
-  NODE_SET_METHOD(target, "set", Set);
+  Nan::HandleScope();
+  Nan::SetMethod(target, "set", Set);
 }
 
 } // anonymous namespace
