@@ -1,6 +1,7 @@
 node-function-name
 ==================
 ### Set the "name" property of `Function` objects
+[![Build Status](https://travis-ci.org/TooTallNate/node-function-name.svg?branch=master)](http://travis-ci.org/TooTallNate/node-function-name)
 
 Very simple module. Sets the, usually immutable, `name` property of `Function`
 objects. This functionality is exposed internally to V8, but not exposed to
