@@ -4,8 +4,10 @@ node-function-name
 [![Build Status](https://travis-ci.org/TooTallNate/node-function-name.svg?branch=master)](http://travis-ci.org/TooTallNate/node-function-name)
 
 Very simple module. Sets the, usually immutable, `name` property of `Function`
-objects. This functionality is exposed internally to V8, but not exposed to
-JavaScript, so this native module is required.
+objects. In older versions of node, this functionality is exposed internally to
+V8, but not exposed to JavaScript, so this native module is required. In newer
+versions of node, function names can be redefined with `Object.defineProperty`,
+which this module will use when possible, rather than the native addon.
 
 Note that unfortunately _only_ String values are allowed.
 
