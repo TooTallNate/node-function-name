@@ -12,7 +12,7 @@ which this module uses.
 Note that unfortunately _only_ String values are allowed.
 
 > **NOTE: For users of node prior to `iojs@3.0.0`**, you'll need to use an
-earlier version of this module, `function-name@1`, which provides a C++
+alternate version of this module, `function-name@native`, which provides a C++
 implementation.
 
 Installation
