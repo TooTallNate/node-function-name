@@ -1,4 +1,9 @@
 
+2.0.0 / 2017-03-25
+==================
+
+  * For complete, and future changelogs, see [GitHub Releases](https://github.com/TooTallNate/node-function-name/releases)
+
 1.0.0 / 2015-12-01
 ==================
 
