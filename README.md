@@ -3,13 +3,17 @@ node-function-name
 ### Set the "name" property of `Function` objects
 [![Build Status](https://travis-ci.org/TooTallNate/node-function-name.svg?branch=master)](http://travis-ci.org/TooTallNate/node-function-name)
 
-Very simple module. Sets the, usually immutable, `name` property of `Function`
+Very simple module. Sets the non-writable `name` property of `Function`
 objects. In older versions of node, this functionality is exposed internally to
-V8, but not exposed to JavaScript, so this native module is required. In newer
+V8, but not exposed to JavaScript, so a  native module is required. In newer
 versions of node, function names can be redefined with `Object.defineProperty`,
-which this module will use when possible, rather than the native addon.
+which this module uses.
 
 Note that unfortunately _only_ String values are allowed.
+
+> **NOTE: For users of node prior to `iojs@3.0.0`**, you'll need to use an
+earlier version of this module, `function-name@1`, which provides a C++
+implementation.
 
 Installation
 ------------
