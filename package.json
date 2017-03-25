@@ -17,8 +17,7 @@
   "scripts": {
     "test": "node test/test"
   },
-  "dependencies": {
-    "bindings": "^1.2.1",
-    "nan": "2"
+  "engines": {
+    "node": ">=3.0.0"
   }
 }
